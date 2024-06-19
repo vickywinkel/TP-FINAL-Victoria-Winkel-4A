@@ -23,6 +23,10 @@ public class ScriptTeclas : MonoBehaviour
         {
             objetos[counter].SetActive(false);
             counter--;
+            if (counter == -1)
+            {
+                counter = objetos.Length -  1;
+            }
             objetos[counter].SetActive(true);
             
         }
@@ -31,6 +35,10 @@ public class ScriptTeclas : MonoBehaviour
 
             objetos[counter].SetActive(false);
             counter++;
+            if (counter == objetos.Length)
+            {
+                counter = 0 ;
+            }
             objetos[counter].SetActive(true);
         }
     }
