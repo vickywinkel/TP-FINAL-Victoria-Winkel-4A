@@ -24,6 +24,7 @@ public class ScriptTeclas : MonoBehaviour
             objetos[counter].SetActive(false);
             counter--;
             objetos[counter].SetActive(true);
+            
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
